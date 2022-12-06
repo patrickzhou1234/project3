@@ -1,0 +1,14 @@
+public class CritterTester {
+    public static void main(String[] args) {
+        Critter beetle = new Critter("beetle");
+        System.out.println(beetle.currentStatus());
+        int i, j;
+        for (i=0;i<4;i++) {
+            for (j=0;j<5;j++) {
+                beetle.moveforward();
+            }
+            beetle.turnright();
+            System.out.println(beetle.currentStatus());
+        }
+    }   
+}

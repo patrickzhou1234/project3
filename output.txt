@@ -1,0 +1,31 @@
+Name: beetle
+Direction: North
+Position: (5, 5)
+Name: beetle
+Direction: East
+Position: (5, 10)
+Name: beetle
+Direction: South
+Position: (10, 10)
+Name: beetle
+Direction: West
+Position: (10, 5)
+Name: beetle
+Direction: North
+Position: (5, 5)
+Name: mustang
+Direction: North
+Position: (10, 5)
+Name: mustang
+Direction: West
+Position: (10, 10)
+Name: mustang
+Direction: South
+Position: (5, 10)
+Name: mustang
+Direction: East
+Position: (5, 5)
+beetle and mustang are in a race!
+beetle also goes by bentley
+beetle and mustang are in competition with each other
+blackhawk wants to compete!

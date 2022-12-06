@@ -1,0 +1,65 @@
+/*
+ This is a project to simulate the motions of a critter.
+ 
+ @author Patrick Zhou
+ @version v1.0.0
+*/
+
+public class Critter {
+    private int x, y, facing;
+    private String name;
+    public Critter(String passedname) {
+        x=5;
+        y=5;
+        facing = 0;
+        name = passedname;
+    }
+    public void turnright() {
+        facing++;
+        if (facing == 4) {
+            facing = 0;
+        }
+    }
+    public void turnleft() {
+        facing--;
+        if (facing == -1) {
+            facing = 3;
+        }
+    }
+    public void moveforward() {
+        if (facing == 0) {
+            y++;
+        } else if (facing == 1) {
+            x++;
+        } else if (facing == 2) {
+            y--;
+        } else if (facing == 3) {
+            x--;
+        }
+    }
+    public int getPosX() {
+        return x;
+    }
+    public int getPosY() {
+        return y;
+    }
+    public int direction() {
+        return facing;
+    }
+    public String currentStatus() {
+        String fullstr="";
+        fullstr+="Name: "+name+"\n";
+        String dir = "";
+        if (facing == 0) {
+            dir = "North";
+        } else if (facing == 1) {
+            dir = "East";
+        } else if (facing == 2) {
+            dir = "South";
+        } else if (facing == 3) {
+            dir = "West";
+        }
+        fullstr+="Direction: "+dir+"\n"+"Position: ("+x+", "+y+")";
+        return fullstr;
+    }
+}
